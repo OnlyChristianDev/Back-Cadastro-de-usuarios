@@ -7,6 +7,6 @@ router.post('/cadastropf', UserController.cadastrarPF);
 router.post('/login', UserController.login);
 router.post('/cadastropj', UserController.cadastrarPJ);
 router.get('/listarpf', UserController.listarPessoasFisicas);
-router.post('/listarpj', UserController.listarPessoasJuridicas);
-
+router.get('/listarpj', UserController.listarPessoasJuridicas);
+router.delete('/deletar/:id', UserController.deletarUsuario);
 module.exports = router;
